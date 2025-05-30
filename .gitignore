@@ -1,4 +1,7 @@
 
-
+/__pycache__
 /Extra
+/venv
+
+
 .env
