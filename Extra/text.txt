@@ -1,0 +1,5 @@
+# -----TODO-----:
+# Add Error handling (Done)
+# implement class (Done)
+# Write email content
+# Design Email HTML Body 
