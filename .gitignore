@@ -2,6 +2,8 @@
 /__pycache__
 /Extra
 /venv
+/instance
 
 
 .env
+/instance/email_logs.db
