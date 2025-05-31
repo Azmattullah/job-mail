@@ -64,6 +64,11 @@ def view_logs():
     return render_template("table.html", logs=logs)
 
 
+@app.route("/index")
+def home():
+    return render_template("index.html")
+
+
 
 
 if __name__ == "__main__":
