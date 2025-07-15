@@ -41,13 +41,13 @@ def index():
                 email_sender.send_email_fun()
 
                 # Extract Name and Company Name form Receiver Email Id
-                receiver_email_id = receiver_email.split('@')
-                receiver_name = ''.join(i for i in receiver_email_id[0] if not i.isdigit())
-                company_name = receiver_email_id[1].split('.')[0]
+                # receiver_email_id = receiver_email.split('@')
+                # receiver_name = ''.join(i for i in receiver_email_id[0] if not i.isdigit())
+                # company_name = receiver_email_id[1].split('.')[0]
 
                 # Save to DB
-                new_log = EmailSendLog(receiver_email=receiver_email, receiver_name=receiver_name, company_name=company_name)
-                db.session.add(new_log)
+                # new_log = EmailSendLog(receiver_email=receiver_email, receiver_name=receiver_name, company_name=company_name)
+                # db.session.add(new_log)
             
             db.session.commit()
             flash("Email sent successfully!", "success")
